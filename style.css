@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #022E57;
+    --cor-secundaria: #FFFFFF;
+    --cor-terciaria: #FF96AD;
+    --cor-hover: #005A8D;
+
+    --fonte-primária: 'Montserrat', sans-serif;
+    --fonte-secundária: 'Krona One', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+     padding: 2% 0% 0% 15%;
+     
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__ancora {
+    font-family: var(--fonte-primária);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:var(--cor-terciaria);
+    text-decoration: none;
+}
+.apresentacao {
+    padding: 6% 15%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    gap: 40px;
+}
+
+.apresentacao__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-secundária);
+}
+
+
+.apresentacao__paragrafo {
+    font-size: 1.5rem;
+    font-family: var(--fonte-primária);
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__subtitulo {
+    font-family: var(--fonte-secundária);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.apresentacao__ancora {
+    width: 50%;   
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    border-radius: 8px;
+    border: 2px solid var(--cor-terciaria);
+    padding: 21.5px 0;
+
+    color: var(--cor-secundaria);
+    text-align: center;
+    text-decoration:none;
+    font-size: 1.5rem;
+    font-family: var(--fonte-primária);
+    font-weight: 600;
+}
+
+.apresentacao__ancora:hover {
+    background-color: var(--cor-hover);
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+h1{
+    font-weight: bold;
+}
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+
+    text-align: center;
+    font-family: var(--fonte-primária);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width:1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu { 
+        justify-content: center;
+
+    }
+    
+    .apresentacao {
+        flex-direction: column-reverse;
+    }    
+
+    .apresentacao__conteudo {
+        width: 100%; 
+    }
+}
